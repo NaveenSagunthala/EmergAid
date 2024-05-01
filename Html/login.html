@@ -11,19 +11,21 @@
   box-sizing: border-box;
   cursor: pointer;
 }
-body{
+ header{
   
-  height: 100;
-  width: 100;
+  background-image: url(image2.jpg); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background:linear-gradient(to right,#3f5efb,#fc466b);
+    
+
 }
     
-   form{
+  .background{
     width: 30rem;
-    height: 35rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
     background:rgba(255,255,255,0.06);
@@ -31,13 +33,16 @@ body{
     border-radius: 30px;
     border-left:1px solid black;
     border-right:1px solid black;
+    
+     
+     margin-left: 35%;
    }
    h1{
     
     font-size: 40px;
     text-align: center;
     color:white;
-    
+    padding-top: 15%;
     letter-spacing: 2px;
     margin-bottom: 5%;
     
@@ -60,7 +65,7 @@ body{
       border-bottom: 1px solid rgba(255,255,255,0.6);
       opacity: 0.8;
     }
-    button{
+   .button{
       width: 40%;
       margin: 3% auto;
       color:red ;
@@ -74,6 +79,7 @@ body{
       box-shadow: 3px 3px 5px rgba(31,38,135,.37);
       border-left: 1px solid black;
       border-right: 1px solid black;
+      
     }
     
    a{
@@ -86,8 +92,9 @@ body{
     </style>
 </head>
 <body>
-
- <form action="" method="post">  
+<header>
+  <div class="background">
+    <form action="" method="post">  
     <h1><b>EmergAid Login</b></h1>
   
       
@@ -97,19 +104,23 @@ body{
    
       <label for="password">Password</label>
       <input type="password"  id="password" name="password" required>
+    </form>
       <a href=""><b>forget password?</b></a>
-    <button> <a href=""><input type="button" value="Login"></a></button>
-  <button><a href="index.html"><input type="button" value="BACK"></a></button>
-    
+      <div class="button">
+     <a href=""><input type="button" value="Login"></a>
+      </div>
+      <div class="button">
+     <a href="index.html"><input type="button" value="BACK">
+  </div>
  <h1>Sign Ub</h1>
  
-     <button>
+     <div class="button">
     <a href="sign up.html"><input type="button" value="New user"></a>
-  </button>
-
   
-   </form>
-
+</div>
+</div>
+   
+</header>
 
 </body>
 </html>

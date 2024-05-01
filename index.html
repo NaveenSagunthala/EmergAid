@@ -7,21 +7,34 @@
     margin:0;
     padding: 0;
     font-family: century Gothic;
+
 }
+
+
 header{
-    background-image: url(image.jpg) ;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
+    background-image: url(image.jpg); 
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+    position:relative;
+}
+.main{
+    /*float:right;*/
+    display:inline;
+    position: relative;    
+    left: 67%;
 }
 ul{
+    display:flex;
+    position:relative;
     float: right;
-    list-style-type: none;
-    margin: 25px;
+    align-content: end;
+    list-style-type: none ;
+    margin: 25px ;
 }
 ul li{
-    display: inline-block;
+    display: inline-block ;
 }
 ul li a{
 text-decoration: none;
@@ -47,12 +60,12 @@ color: black;
 .title h1{
     color: #24099e;
     font-size: 40px;
-    display: flex;
+    
 }
 .title p{
     color: (black);
     font-size: 20px;
-    display: flex;
+    
 }
 .button{
     position: absolute;
@@ -82,9 +95,9 @@ color: #000;
                     <ul>
                         <li class="active"><a href="">Home</a></li>
                         <li><a href="">WHO</a></li>
-                        <li><a href="about us.html">About</a></li>
+                        <li><a href="Html/about us.html">About</a></li>
                         <li><a href="">Contact</a></li>
-                        <li><a href="logout.html">Logout</a></li>
+                        <li><a href="Html/logout.html">Logout</a></li>
                     </ul>
                     
                 </div>
@@ -97,8 +110,8 @@ color: #000;
     designed to empower<br> you to act effectively in medical emergencies. </p>
                 </div>
                 <div class="button">
-    <a href="login.html"class="btn">Login</a>
-    <a href="Emergency.html"class="btn">Emergency Login</a>
+    <a href="Html/login.html"class="btn">Login</a>
+    <a href="Html/Emergency.html"class="btn">Emergency Login</a>
     
                 </div>
             
