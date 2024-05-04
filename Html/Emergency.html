@@ -14,15 +14,14 @@
         background-image: url(/Html/image2.jpg);
         background-size: cover;
         background-position: center;
+        height: 110vh;
+        justify-content: center;
         align-items: center;
         display: flex;
-        position:relative;
-        height:650px;
-        width: 1330px;
         }
         .background{
-        width: 30rem;
-        height: 30rem;
+       
+        justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -31,28 +30,31 @@
         border-radius: 30px;
         border-left:1px solid black;
         border-right:1px solid black;
-         margin-left: 35%;
-         margin-top: 5%;
+        height: 350px;
+       
         }
         h1{
             text-align: center;
             color: white;
             display: flex;
             font-size: 40px;
+            margin-top: 10%;
             padding: 10%;
+            
         }
         label{
             font-size: 25px;
             color: white;
             text-align: center;
             display: flex;
+          padding-top: 2%;
             padding-left: 40%;
          }
          input{
             width: 80%;
       margin: 5% auto;
       margin-left: 10%;
-      margin-bottom: 2%;
+      margin-bottom: 40%;
       border: none;
       outline: none;
       background: transparent;
@@ -63,11 +65,15 @@
      
          }
          .button{
+          top: 75%;
+    right: 34%;
+    transform: translate(-50%,-50%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-     margin-left: 15%;
     
-    padding-top: 50%;
-transform: translate(-50%,-50%); 
+    
   }
   .btn{
     border: 1px solid #fff;
@@ -85,17 +91,17 @@ color: #000;
 <body>
     <header>
         <div class="background">
-        <div class="main">
+          <div class="main">
            <h1><b> EMERGENCY LOGIN</b></h1>
 
                    <label for="Search">Search</label>
                     <input type="search"  id="Search" name="search">
                     
-        </div>
-        <div class="button">
+          </div>
+          <div class="button">
                 <a href="" class="btn">Search</a>
                 <a href="index.html" class="btn">Back</a>
-       </div> 
+          </div> 
     </div>   
   </header>
 
